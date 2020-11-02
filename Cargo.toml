@@ -1,5 +1,5 @@
 [package]
-name = "flanny"
+name = "rusty-birds"
 version = "0.1.0"
 authors = ["Juan Pablo <pablo@cruzf.net>"]
 edition = "2018"
