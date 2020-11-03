@@ -8,9 +8,8 @@ edition = "2018"
 [dependencies.sdl2]
 version = "0.34.3"
 default-features = false
-features = ["bundled", "static-link", "ttf"]
+features = ["bundled", "static-link"]
 
 [dependencies]
 rand = "0.7.3"
 rand_distr = "0.3.0"
-reduce = "0.1.3"

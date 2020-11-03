@@ -21,7 +21,6 @@ fn main() -> Result<(), String> {
 
     let sdl_context = sdl2::init().unwrap();
     let video_subsystem = sdl_context.video().unwrap();
-    let ttf_context = sdl2::ttf::init().map_err(|e| e.to_string())?;
     let window = video_subsystem
         .window("SDL2", width, height)
         .position_centered()
@@ -32,8 +31,6 @@ fn main() -> Result<(), String> {
     //let mut timer = sdl_context.timer().unwrap();
     let mut event_pump = sdl_context.event_pump().unwrap();
 
-    // Load a font
-    let mut font = ttf_context.load_font("../assets/OpenSans-Regular.ttf", 128)?;
     let mut running = true;
 
     let mut canvas = window
